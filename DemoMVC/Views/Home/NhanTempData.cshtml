@@ -1,0 +1,12 @@
+﻿﻿@{
+    ViewData["Title"] = "Demo TempData";
+}
+<div class="card shadow-sm">
+    <div class="card-body">
+        <h1 class="text-warning">Demo TempData</h1>
+        <div class="alert alert-success">@TempData["ThongBao"]</div>
+        <p><strong>Người gửi:</strong> @TempData["HoTen"]</p>
+        <p>Trang này được mở sau <code>RedirectToAction</code>, chứng minh TempData có thể giữ dữ liệu sang request kế tiếp.</p>
+        <a asp-action="Index" class="btn btn-dark">Quay lại trang chủ</a>
+    </div>
+</div>

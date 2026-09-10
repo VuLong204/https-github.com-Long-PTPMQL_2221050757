@@ -1,0 +1,13 @@
+﻿﻿@{
+    ViewData["Title"] = "Demo ViewData";
+}
+<div class="card shadow-sm">
+    <div class="card-body">
+        <h1 class="text-success">@ViewData["TieuDe"]</h1>
+        <hr />
+        <p><strong>Họ tên:</strong> @ViewData["HoTen"]</p>
+        <p><strong>MSSV:</strong> @ViewData["Mssv"]</p>
+        <p><strong>Lớp:</strong> @ViewData["Lop"]</p>
+        <div class="alert alert-success mb-0">Dữ liệu được lưu theo cặp <code>key/value</code> trong ViewData.</div>
+    </div>
+</div>

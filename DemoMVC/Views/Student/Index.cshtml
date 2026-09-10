@@ -1,0 +1,20 @@
+﻿﻿@{
+    ViewData["Title"] = "Student Demo";
+}
+<div class="card shadow-sm">
+    <div class="card-body">
+        <h1>Student Demo</h1>
+        <p class="text-muted">Thực hành truyền dữ liệu bằng ViewBag.</p>
+        <form asp-action="Index" method="post" class="row g-3">
+            @Html.AntiForgeryToken()
+            <div class="col-md-4"><label class="form-label">Họ và tên</label><input name="fullName" class="form-control" required /></div>
+            <div class="col-md-4"><label class="form-label">Địa chỉ</label><input name="address" class="form-control" required /></div>
+            <div class="col-md-4"><label class="form-label">Trường</label><input name="university" class="form-control" required /></div>
+            <div class="col-12"><button class="btn btn-primary" type="submit">Gửi dữ liệu</button></div>
+        </form>
+        @if (ViewBag.ThongBao != null)
+        {
+            <div class="alert alert-info mt-4">@ViewBag.ThongBao</div>
+        }
+    </div>
+</div>

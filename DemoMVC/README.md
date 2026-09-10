@@ -1,5 +1,25 @@
-Đinh tuyến trong MVC
-Định tuyến (Routing) là cơ chế giúp ASP.NET Core MVC xác định URL của người dùng sẽ được xử lý bởi Controller và Action nào
-MVC sẽ gọi bộ điều khiển (Controller) và các hành động bên trong (Action) thông qua URL
-Logic định tuyến MVC sử dụng dạng: /Controller/Action/Parameters VD: https://localhost:5001/Home/Index trong đó: Home là Controller, Index là Action
-Định tuyến được cấu hình trong file Program.cs: app.MapControllerRoute( name: "default", pattern: "{controller=Home}/{action=Index}/{id?}");
+# PTPMQL_2221050757 - Quản lý trạng thái trong ASP.NET Core MVC
+
+**Sinh viên:** Vũ Long  
+**MSSV:** 2221050757  
+**Chủ đề:** Tìm hiểu về quản lý trạng thái trong ASP.NET Core MVC
+
+## Nội dung
+- ViewBag: truyền dữ liệu từ Controller sang View.
+- ViewData: truyền dữ liệu dạng key/value từ Controller sang View.
+- TempData: lưu dữ liệu để sử dụng ở request kế tiếp, đặc biệt khi RedirectToAction.
+- Student Demo: thực hành form và ViewBag.
+
+## Chạy project
+```bash
+dotnet restore
+dotnet run
+```
+Mở URL do ASP.NET Core hiển thị trong Terminal.
+
+## Các trang demo
+- `/Home/Index`
+- `/Home/ViewBagDemo`
+- `/Home/ViewDataDemo`
+- `/Home/GuiTempData`
+- `/Student/Index`
