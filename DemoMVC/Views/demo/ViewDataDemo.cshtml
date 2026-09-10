@@ -1,0 +1,47 @@
+@{
+    ViewData["Title"] = "Demo ViewData";
+}
+
+<div class="container mt-5">
+
+    <div class="card shadow">
+
+        <div class="card-header bg-success text-white">
+            <h2>Ví dụ sử dụng ViewData</h2>
+        </div>
+
+        <div class="card-body">
+
+            <h4>@ViewData["Title"]</h4>
+
+            <p>
+                @ViewData["Message"]
+            </p>
+
+            <hr />
+
+            <p>
+                <strong>Tên sinh viên:</strong>
+                @ViewData["StudentName"]
+            </p>
+
+            <p>
+                <strong>Tuổi:</strong>
+                @ViewData["Age"]
+            </p>
+
+            <div class="alert alert-success">
+                ViewData lưu dữ liệu dưới dạng
+                Dictionary với cặp Key - Value.
+            </div>
+
+            <a asp-action="Index"
+               class="btn btn-secondary">
+                ← Quay lại
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
