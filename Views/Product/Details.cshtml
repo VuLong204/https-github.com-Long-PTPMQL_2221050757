@@ -1,4 +1,4 @@
-@model DemoMVC.Models.Product
+@model PTPMQL_MVC.Models.Product
 
 @{
     ViewData["Title"] = "Chi tiết sản phẩm";
@@ -11,39 +11,29 @@
             <div class="card border-0 shadow-sm">
 
                 <div class="card-header bg-info text-white py-3">
-                    <h4 class="mb-0">
-                        Chi tiết sản phẩm
-                    </h4>
+                    <h4 class="mb-0">Chi tiết sản phẩm</h4>
                 </div>
 
                 <div class="card-body p-4">
 
                     <dl class="row">
 
-                        <dt class="col-sm-4">
-                            ID
-                        </dt>
+                        <dt class="col-sm-4">ID</dt>
                         <dd class="col-sm-8">
                             @Model.Id
                         </dd>
 
-                        <dt class="col-sm-4">
-                            Tên sản phẩm
-                        </dt>
+                        <dt class="col-sm-4">Tên sản phẩm</dt>
                         <dd class="col-sm-8">
                             @Model.Name
                         </dd>
 
-                        <dt class="col-sm-4">
-                            Giá
-                        </dt>
+                        <dt class="col-sm-4">Giá</dt>
                         <dd class="col-sm-8 text-danger fw-bold">
                             @Model.Price.ToString("N0") VND
                         </dd>
 
-                        <dt class="col-sm-4">
-                            Danh mục
-                        </dt>
+                        <dt class="col-sm-4">Danh mục</dt>
                         <dd class="col-sm-8">
                             <span class="badge bg-secondary">
                                 @Model.Category
@@ -76,6 +66,7 @@
                     </div>
 
                 </div>
+
             </div>
 
         </div>
