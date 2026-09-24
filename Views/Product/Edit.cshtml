@@ -14,7 +14,7 @@
                     </h4>
                 </div>
                 <div class="card-body p-4">
-                    <form asp-action="Edit">
+                    <form asp-action="Edit" method="post">
                         <!-- Khóa ẩn bắt buộc để truyền ID về cho Controller tìm kiếm bản ghi -->
                         <input type="hidden" asp-for="Id" />
 
@@ -28,7 +28,7 @@
 
                         <div class="mb-3">
                             <label asp-for="Price" class="form-label fw-semibold">Giá bán</label>
-                            <input asp-for="Price" class="form-control" type="number" min="0" />
+                            <input asp-for="Price" class="form-control" type="number" min="1000" />
                             <span asp-validation-for="Price" class="text-danger"></span>
                         </div>
 
